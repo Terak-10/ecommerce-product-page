@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+
+<nav class="nav">
+  <img src="/images/logo.svg" alt="Logo" class="logo">
+  <ul class="nav_ul">
+    <li class="nav_li"><a href="#" class="nav_link">Collections</a></li>
+    <li class="nav_li"><a href="#" class="nav_link">Men</a></li>
+    <li class="nav_li"><a href="#" class="nav_link">Women</a></li>
+    <li class="nav_li"><a href="#" class="nav_link">About</a></li>
+    <li class="nav_li"><a href="#" class="nav_link">Contact</a></li>
+  </ul>
+<div class="overlay hidden"></div>
+  <div class="checkout hidden">
+    <div class="checkout_top">Cart</div>
+    <div class="checkout_bottom">
+      <div class="checkout_orders">
+        <img src="/images/image-product-1-thumbnail.jpg" alt="actual - product 1" class="checkout_img">
+        <div class="checkout_p-box">
+          <p class="checkout_p">Fall Limited Edition Sneakers</p>
+          <div class="checkout_summary">
+            <p class="checkout_p-single">$125.00</p>
+            <span>x</span>
+            <span class="span-calc">3</span>
+            <p class="checkout_sum">$375.00</p>
+          </div>
+        </div>
+        <img src="/images/icon-delete.svg" alt="Trash - delete" class="ceckout_trash">
+      </div>
+      <div class="checkout_btn">
+        Chechkout
+      </div>
+    </div>
+  </div>
+  <div class="shop-box">
+    <span class="span-current-shop hidden">0</span>
+    <img src="/images/icon-cart.svg" alt="Icon shop" class="nav_shop">
+  </div>
+  <img src="/images/image-avatar.png" alt="Icon user" class="nav_user">
+</nav>
+<main class="main">
+  <div class="left-side">
+    <div class="top">
+      <div class="top_img-box">
+        <img src="/images/image-product-1.jpg" alt="product-1" class="top_img">
+        <img src="/images/image-product-2.jpg" alt="product-2" class="top_img hidden">
+        <img src="/images/image-product-3.jpg" alt="product-3" class="top_img hidden">
+        <img src="/images/image-product-4.jpg" alt="product-4" class="top_img hidden">
+      </div>
+    </div>
+    <div class="bottom">
+      <bottom class="box">
+        <img src="/images/image-product-1-thumbnail.jpg" alt="actual - product 1" class="bottom_img actual">
+      </bottom>
+      <bottom class="box">
+        <img src="/images/image-product-2-thumbnail.jpg" alt="actual - product 2" class="bottom_img actual">
+      </bottom>
+      <bottom class="box">
+        <img src="/images/image-product-3-thumbnail.jpg" alt="actual - product 3" class="bottom_img actual">
+      </bottom>
+      <bottom class="box">
+        <img src="/images/image-product-4-thumbnail.jpg" alt="actual - product 4" class="bottom_img actual">
+      </bottom>
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="text-box">
+      <p class="text-box_p">sneaker company</p>
+      <h1 class="text-box_h-1">Fall Limited Edition Sneakers</h1>
+      <p class="text-box_p-2">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+    </div>
+    <div class="price-box">
+      <div class="price-box_top">
+        <p class="price-box_price">$125.00</p>
+        <p class="price-box_discount">50%</p>
+      </div>
+      <div class="price-box_bottom">
+        $250.00
+      </div>
+    </div>
+    <div class="btn-box">
+      <button class="btn-box_btn-1">
+        <span class="btn-box_span-1">-</span>
+        <p class="btn-box-p">0</p>
+        <span class="btn-box_span-2">+</span>
+      </button>
+      <button class="btn-box_btn-2">
+        <img src="/images/shop-icon.ico" alt="Shop icon" class="btn-box_shop">
+        Add to cart
+      </button>
+    </div>
+  </div>
+</main>
+
+<script src="/script.js"></script>
+</body>
+</html>
