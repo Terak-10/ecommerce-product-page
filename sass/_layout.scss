@@ -1,11 +1,16 @@
 .nav {
     max-width: 1440px;
     padding: 0 5vw;
-    margin: 0 auto 5rem auto;
-    height: 7rem;
+    margin: 0 auto 3.5rem auto;
+    height: 5.5rem;
     display: flex;
     align-items: center;
     border-bottom: 2px solid hsla(218, 14%, 65%, 0.241);
+
+    @media (min-height: 800px) {
+        height: 7rem;
+        margin: 0 auto 5rem auto;
+    }
 }
 
 .main {

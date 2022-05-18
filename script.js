@@ -7,9 +7,25 @@ const checkout = document.querySelector(".checkout");
 const user = document.querySelector(".nav_user");
 const body = document.querySelector("body");
 const overlay = document.querySelector(".overlay");
+const calc = document.querySelector(".span-calc");
+const checkOutSum = document.querySelector(".checkout_sum");
+const forOneProduct = document.querySelector(".checkout_p-single");
+const empty = document.querySelector(".checkout-empty");
+const have = document.querySelector(".checkout_have");
+const deleteOrder = document.querySelector(".checkout_trash");
+const shop = document.querySelector(".nav_shop");
 
 let currentValue = 0;
 btnValue.textContent = currentValue;
+
+let sumarry = 0;
+checkOutSum.textContent = sumarry;
+
+let calcNumber = 0;
+calc.textContent = calcNumber;
+
+let forOneProductprice = 125;
+forOneProduct.textContent = `${forOneProductprice} $`;
 
 
 spanMinus.addEventListener("click", function() {
@@ -30,8 +46,19 @@ btnAddToCard.addEventListener("click", function() {
     if(currentValue > 0) {
         currentShopValue.textContent = currentValue;
         currentShopValue.classList.remove("hidden");
+        have.classList.remove("hidden");
+        empty.classList.add("hidden");
+
+        calcNumber = currentValue;
+        calc.textContent = calcNumber;
+
+        sumarry = calcNumber * forOneProductprice;
+        checkOutSum.textContent = `${sumarry} $`;
+
+
     } else {
         currentShopValue.classList.add("hidden");
+        
     }
 });
 
@@ -49,7 +76,8 @@ const addHidden  = function() {
 
 
 
-user.addEventListener("click", removeHidden);
+
+shop.addEventListener("click", removeHidden);
 overlay.addEventListener("click", addHidden);
 
 document.addEventListener("keydown", function(e) {
@@ -57,4 +85,10 @@ document.addEventListener("keydown", function(e) {
     if(e.key === "Escape" && !checkout.classList.contains("hidden")) {
         addHidden();
     }
+});
+
+
+deleteOrder.addEventListener("click", function() {
+    have.classList.add("hidden");
+    empty.classList.remove("hidden");
 });
