@@ -16,7 +16,6 @@ const deleteOrder = document.querySelector(".checkout_trash");
 const shop = document.querySelector(".nav_shop");
 const actual = document.querySelector(".actual");
 
-
 const product1 = document.querySelector(".product-1");
 const product2 = document.querySelector(".product-2");
 const product3 = document.querySelector(".product-3");
@@ -40,7 +39,7 @@ calc.textContent = calcNumber;
 let forOneProductprice = 125;
 forOneProduct.textContent = `${forOneProductprice} $`;
 
-
+// BUTTON ADD TO CARD 
 spanMinus.addEventListener("click", function() {
 
     if(currentValue > 0) {
@@ -53,7 +52,6 @@ spanPlus.addEventListener("click", function() {
     currentValue++;
     btnValue.textContent = currentValue;
 });
-
 
 btnAddToCard.addEventListener("click", function() {
     if(currentValue > 0) {
@@ -75,8 +73,7 @@ btnAddToCard.addEventListener("click", function() {
     }
 });
 
-
-
+//CHECKOUT 
 const removeHidden  = function() {
     checkout.classList.remove("hidden");
     overlay.classList.remove("hidden");
@@ -86,9 +83,6 @@ const addHidden  = function() {
     checkout.classList.add("hidden");
     overlay.classList.add("hidden");
 };
-
-
-
 
 shop.addEventListener("click", removeHidden);
 overlay.addEventListener("click", addHidden);
@@ -100,15 +94,12 @@ document.addEventListener("keydown", function(e) {
     }
 });
 
-
 deleteOrder.addEventListener("click", function() {
     have.classList.add("hidden");
     empty.classList.remove("hidden");
 });
 
-
-
-
+// SWITCH PRODUCT 
 product1.addEventListener("click", function() {
 
     if(!product1.classList.contains("actual")) {
@@ -126,8 +117,6 @@ product1.addEventListener("click", function() {
     
 });
 
-
-
 product2.addEventListener("click", function() {
 
     if(!product2.classList.contains("actual")) {
@@ -143,8 +132,6 @@ product2.addEventListener("click", function() {
     bigProduct3.classList.add("hidden");
     bigProduct4.classList.add("hidden");
 });
-
-
 
 product3.addEventListener("click", function() {
 
@@ -162,7 +149,6 @@ product3.addEventListener("click", function() {
     bigProduct4.classList.add("hidden");
 });
 
-
 product4.addEventListener("click", function() {
 
     if(!product4.classList.contains("actual")) {
@@ -178,7 +164,3 @@ product4.addEventListener("click", function() {
     bigProduct2.classList.add("hidden");
     bigProduct3.classList.add("hidden");
 });
-
-
-
-
