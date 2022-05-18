@@ -14,6 +14,19 @@ const empty = document.querySelector(".checkout-empty");
 const have = document.querySelector(".checkout_have");
 const deleteOrder = document.querySelector(".checkout_trash");
 const shop = document.querySelector(".nav_shop");
+const actual = document.querySelector(".actual");
+
+
+const product1 = document.querySelector(".product-1");
+const product2 = document.querySelector(".product-2");
+const product3 = document.querySelector(".product-3");
+const product4 = document.querySelector(".product-4");
+const thumbnailImg = document.querySelector(".bottom_img");
+
+const bigProduct1 = document.querySelector(".big-product-1");
+const bigProduct2 = document.querySelector(".big-product-2");
+const bigProduct3 = document.querySelector(".big-product-3");
+const bigProduct4 = document.querySelector(".big-product-4");
 
 let currentValue = 0;
 btnValue.textContent = currentValue;
@@ -92,3 +105,80 @@ deleteOrder.addEventListener("click", function() {
     have.classList.add("hidden");
     empty.classList.remove("hidden");
 });
+
+
+
+
+product1.addEventListener("click", function() {
+
+    if(!product1.classList.contains("actual")) {
+        product1.classList.add("actual");
+        bigProduct1.classList.remove("hidden");
+    }
+
+    product2.classList.remove("actual");
+    product3.classList.remove("actual");
+    product4.classList.remove("actual");
+
+    bigProduct2.classList.add("hidden");
+    bigProduct3.classList.add("hidden");
+    bigProduct4.classList.add("hidden");
+    
+});
+
+
+
+product2.addEventListener("click", function() {
+
+    if(!product2.classList.contains("actual")) {
+        product2.classList.add("actual");
+        bigProduct2.classList.remove("hidden");
+    }
+
+    product1.classList.remove("actual");
+    product3.classList.remove("actual");
+    product4.classList.remove("actual");
+
+    bigProduct1.classList.add("hidden");
+    bigProduct3.classList.add("hidden");
+    bigProduct4.classList.add("hidden");
+});
+
+
+
+product3.addEventListener("click", function() {
+
+    if(!product3.classList.contains("actual")) {
+        product3.classList.add("actual");
+        bigProduct3.classList.remove("hidden");
+    }
+
+    product1.classList.remove("actual");
+    product2.classList.remove("actual");
+    product4.classList.remove("actual");
+
+    bigProduct1.classList.add("hidden");
+    bigProduct2.classList.add("hidden");
+    bigProduct4.classList.add("hidden");
+});
+
+
+product4.addEventListener("click", function() {
+
+    if(!product4.classList.contains("actual")) {
+        product4.classList.add("actual");
+        bigProduct4.classList.remove("hidden");
+    }
+
+    product1.classList.remove("actual");
+    product2.classList.remove("actual");
+    product3.classList.remove("actual");
+
+    bigProduct1.classList.add("hidden");
+    bigProduct2.classList.add("hidden");
+    bigProduct3.classList.add("hidden");
+});
+
+
+
+

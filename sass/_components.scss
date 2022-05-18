@@ -232,11 +232,15 @@
     }
 
     &_img:hover {
-        opacity: 0.5;
+        opacity: 0.6;
         cursor: pointer;
     }
 }
 
+.actual {
+    border: 2px solid var(--Orange);
+    opacity: 0.4;
+}
 // RIGHT - SIDE
 .text-box {
     margin-bottom: 1rem;

@@ -184,8 +184,12 @@ body {
         width: clamp(7.3rem, 12.7vw, 12rem);
         height: 100%; } }
   .bottom_img:hover {
-    opacity: 0.5;
+    opacity: 0.6;
     cursor: pointer; }
+
+.actual {
+  border: 2px solid var(--Orange);
+  opacity: 0.4; }
 
 .text-box {
   margin-bottom: 1rem; }
