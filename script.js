@@ -97,6 +97,12 @@ document.addEventListener("keydown", function(e) {
 deleteOrder.addEventListener("click", function() {
     have.classList.add("hidden");
     empty.classList.remove("hidden");
+    // Tu pridať reset 
+
+    currentValue = 0;
+    btnValue.textContent = currentValue;
+    currentShopValue.textContent = currentValue;
+    currentShopValue.classList.add("hidden");
 });
 
 // SWITCH PRODUCT 

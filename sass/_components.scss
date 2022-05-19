@@ -46,6 +46,8 @@
     }
 }
 
+ 
+// OVERLAY's
 .overlay {
     position: absolute;
     top: 0;
@@ -53,6 +55,17 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
+    backdrop-filter: blur(3px);
+    z-index: 5;
+  }
+
+  .overlay-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.755);
     backdrop-filter: blur(3px);
     z-index: 5;
   }
@@ -162,7 +175,6 @@
 }
 
 // MAIN 
-
 .left-side {
     flex: 1;
 
@@ -200,6 +212,11 @@
              height: clamp(30rem, 50vw, 55rem);
         }
     
+    }
+
+
+    &_img:hover {
+        cursor: pointer;
     }
 }
 
