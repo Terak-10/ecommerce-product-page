@@ -43,12 +43,10 @@
         right: -575px;
     }
 
-
     &_left-box:hover,
     &_right-box:hover {
         cursor: pointer;
     }
-
 
     &_left,
     &_right {
@@ -71,7 +69,6 @@
         cursor: pointer;
     }
 
-    
     &_img-box {
         margin-bottom: 2rem;
     }
@@ -97,7 +94,6 @@
         cursor: pointer;
     }
 }
-
 
 .bottom-2 {
     display: flex;
@@ -139,4 +135,3 @@
     opacity: 0.5;
     border: 4px solid var(--Orange);
 }
-

@@ -4,7 +4,6 @@ const topImg = document.querySelector(".top_img-box");
 const leftSide = document.querySelector(".left-side-box");
 const leftSideClick = document.querySelector(".left-side-2");
 
-
 topImg.addEventListener("click", function() {
     overlay2.classList.remove("hidden");
     leftSideClick.classList.remove("hidden");
