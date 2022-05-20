@@ -41,7 +41,6 @@
     }
 
     &_shop:hover {
-        filter: brightness(0) saturate(100%);
         cursor: pointer;
     }
 }
@@ -258,6 +257,8 @@
     border: 2px solid var(--Orange);
     opacity: 0.4;
 }
+
+
 // RIGHT - SIDE
 .text-box {
     margin-bottom: 1rem;

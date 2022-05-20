@@ -52,7 +52,6 @@ body {
   border-radius: 50%; }
 
 .nav_shop:hover {
-  filter: brightness(0) saturate(100%);
   cursor: pointer; }
 
 .overlay {
@@ -322,49 +321,16 @@ body {
   .left-side-2_close {
     position: relative;
     z-index: 20;
-    top: 60px;
+    top: -10px;
     left: 570px;
     height: 1.2rem;
     filter: brightness(0) saturate(100%) invert(58%) sepia(68%) saturate(903%) hue-rotate(325deg) brightness(100%) contrast(104%); }
+    @media (min-height: 700px) {
+      .left-side-2_close {
+        top: 0;
+        left: 495px; } }
   .left-side-2_close:hover {
     cursor: pointer; }
-
-.top-2_left-box, .top-2_right-box {
-  position: relative;
-  z-index: 15;
-  height: 2.5rem;
-  width: 2.5rem;
-  background-color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.top-2_left-box {
-  top: 297px;
-  left: -20px; }
-
-.top-2_right-box {
-  top: 253px;
-  right: -575px; }
-
-.top-2_left-box:hover, .top-2_right-box:hover {
-  cursor: pointer; }
-
-.top-2_left, .top-2_right {
-  height: 0.85rem;
-  position: relative;
-  z-index: 16; }
-
-.top-2_left {
-  margin-right: 0.2rem; }
-
-.top-2_right {
-  margin-left: 0.2rem; }
-
-.top-2_left:hover, .top-2_right:hover {
-  filter: brightness(0) saturate(100%) invert(58%) sepia(68%) saturate(903%) hue-rotate(325deg) brightness(100%) contrast(104%);
-  cursor: pointer; }
 
 .top-2_img-box {
   margin-bottom: 2rem; }
@@ -373,14 +339,10 @@ body {
   width: 37rem;
   height: 34rem;
   border-radius: 25px; }
-  @media (max-width: 1190px) {
+  @media (min-height: 700px) {
     .top-2_img {
-      width: 35vw;
-      height: 35vw; } }
-  @media (max-width: 1070px) {
-    .top-2_img {
-      width: clamp(35rem, 60vw, 55rem);
-      height: clamp(30rem, 50vw, 55rem); } }
+      width: 32rem;
+      height: 29rem; } }
 
 .top-2_img:hover {
   cursor: pointer; }
@@ -394,18 +356,16 @@ body {
     background-color: #fff;
     border-radius: 12px;
     height: 6rem; }
+    @media (min-height: 700px) {
+      .bottom-2_box {
+        height: 5rem; } }
   .bottom-2_img {
     width: 100%;
     height: 6rem;
     border-radius: 12px; }
-    @media (max-width: 1190px) {
+    @media (min-height: 700px) {
       .bottom-2_img {
-        width: 6.7vw;
-        height: 100%; } }
-    @media (max-width: 1070px) {
-      .bottom-2_img {
-        width: clamp(7.3rem, 12.7vw, 12rem);
-        height: 100%; } }
+        height: 5rem; } }
   .bottom-2_img:hover {
     opacity: 0.6;
     cursor: pointer;
