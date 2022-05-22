@@ -69,7 +69,8 @@ btnAddToCard.addEventListener("click", function() {
 
     } else {
         currentShopValue.classList.add("hidden");
-        
+        have.classList.add("hidden");
+        empty.classList.remove("hidden");
     }
 });
 
@@ -104,12 +105,6 @@ deleteOrder.addEventListener("click", function() {
     currentShopValue.textContent = currentValue;
     currentShopValue.classList.add("hidden");
 });
-
-
-if(currentValue = 0) {
-    have.classList.add("hidden");
-    empty.classList.remove("hidden");
-}
 
 // SWITCH PRODUCT 
 product1.addEventListener("click", function() {

@@ -1,15 +1,32 @@
 // NAV - BAR
 .logo {
     margin-right: 4rem;
+
+    @media (max-width: 900px) {
+        margin-right: auto;
+    }
 }
 
 .nav {
+
+    &_hamburger {
+        display: none;
+        margin-left: 1.5rem;
+
+        @media (max-width: 900px) {
+            display: block;
+        }
+    }
 
     &_ul {
         list-style: none;
         display: flex;
         gap: 3rem;
         margin-right: auto;
+
+        @media (max-width: 900px) {
+            display: none;
+        }
     }
 
     &_link:link,
@@ -32,6 +49,10 @@
 
     &_user {
         height: 3rem;
+
+        @media (max-width: 400px) {
+            display: none;
+        }
     }
 
     &_user:hover {
@@ -43,9 +64,15 @@
     &_shop:hover {
         cursor: pointer;
     }
+
+    &_shop {
+        @media (max-width: 400px) {
+            display: none;
+        }
+    }
 }
 
- 
+
 // OVERLAY's
 .overlay {
     position: absolute;
@@ -186,14 +213,25 @@
     display: flex;
     flex-direction: column;
     padding: 6rem 0 0 0;
+
+    @media (max-width: 1070px) {
+        padding: 2rem 0 10vw 0;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 
 // LEFT - SIDE
 
 .top {
+
     &_img-box {
         margin-bottom: 2rem;
+
+        @media (max-width: 460px) {
+            margin-bottom: 5vw;
+           }
     }
 
     &_img {
@@ -210,6 +248,16 @@
              width: clamp(35rem, 60vw, 55rem);
              height: clamp(30rem, 50vw, 55rem);
         }
+
+        @media (max-width: 670px) {
+            width: clamp(25rem, 90vw, 35rem);
+            height: clamp(15rem, 70vw, 35rem);
+       }
+
+       @media (max-width: 670px) {
+            width: 90vw;
+            height: 70vw;
+       }
     
     }
 
@@ -226,9 +274,14 @@
 .bottom {
     display: flex;
     gap: 2rem;
+    justify-content: center;
+
+    @media (max-width: 460px) {
+        gap: 5vw;
+    }
 
     &_box {
-        flex: 1;
+        flex: 1;  
     }
 
     &_img {
@@ -242,9 +295,17 @@
         }
 
         @media (max-width: 1070px) {
-            width: clamp(7.3rem, 12.7vw, 12rem);
-            height: 100%;
+            width: 6rem;
        }
+
+       @media (max-width: 670px) {
+            width: clamp(4.3rem, 12vw, 7.8rem);
+       }
+
+       @media (max-width: 460px) {
+        width: 16vw;
+       }
+
     }
 
     &_img:hover {
@@ -277,6 +338,19 @@
         font-size: 3.5rem;
         line-height: 1;
         padding-right: 2rem;
+
+        @media (max-width: 1070px) {
+            padding-right: 0;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 3rem;
+        }
+
+        
+        @media (max-width: 440px) {
+            font-size: clamp(2.1rem, 10vw , 3rem)
+        }
     }
 
 
@@ -285,12 +359,25 @@
         font-size: clamp(0.8rem, 1.3vw, 1rem);
         line-height: 1.4;
         color: hsla(217, 9%, 45%, 0.707);
+ 
+
+        @media (max-width: 1070px) {
+          margin: 0 auto;
+        }
+
+        @media (max-width: 630px) {
+            width: 100%;
+          }
+
+          @media (max-width: 440px) {
+            font-size: clamp(0.7rem, 2vw, 1rem)
+        }
     }
 }
 
 .price-box {
     margin-bottom: 2rem;
-
+ 
     &_top {
         display: flex;
         gap: 1rem;
@@ -320,6 +407,12 @@
 
 .btn-box {
     display: flex;
+
+    @media (max-width: 550px) {
+       flex-direction: column;
+       align-items: center;
+       gap: 1rem;
+    }
 
     &_btn-1 {
         width: 9.5rem;
