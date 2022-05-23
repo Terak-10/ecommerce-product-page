@@ -470,10 +470,10 @@ body {
     background-color: #fff;
     border-radius: 12px;
     height: 5rem; }
-    @media (max-width: 66.875em) {
+    @media (min-height: 1070px) {
       .bottom-2_box {
-        height: clamp(4.4rem, 8vw, 5.5rem); } }
-    @media (min-height: 900px) {
+        height: 5.5rem; } }
+    @media (max-width: 66.875em) {
       .bottom-2_box {
         height: clamp(4.4rem, 8vw, 5.5rem); } }
     @media (max-width: 41.875em) {
