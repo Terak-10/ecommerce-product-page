@@ -12,16 +12,19 @@
 </head>
 <body>
   <div class="overlay-2 hidden"></div>
+  <div class="overlay-3 hidden"></div>
+  <div class="overlay hidden"></div>
 <nav class="nav">
   <img src="/images/logo.svg" alt="Logo" class="logo">
   <ul class="nav_ul">
+    <img src="/images/icon-close.svg" alt="" class="img-close hidden">
     <li class="nav_li"><a href="#" class="nav_link">Collections</a></li>
     <li class="nav_li"><a href="#" class="nav_link">Men</a></li>
     <li class="nav_li"><a href="#" class="nav_link">Women</a></li>
     <li class="nav_li"><a href="#" class="nav_link">About</a></li>
     <li class="nav_li"><a href="#" class="nav_link">Contact</a></li>
+    <img src="/images/image-avatar.png" alt="Icon user" class="userNAV hidden">
   </ul>
-<div class="overlay hidden"></div>
   <div class="checkout hidden">
   <div class="checkout_have hidden">
     <div class="checkout_top">Cart</div>
@@ -58,7 +61,11 @@
     <img src="/images/icon-cart.svg" alt="Icon shop" class="nav_shop">
   </div>
   <img src="/images/image-avatar.png" alt="Icon user" class="nav_user">
-  <img src="/images/icon-menu.svg" alt="" class="nav_hamburger">
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
 </nav>
 <main class="main">
   <div class="left-side">
@@ -145,5 +152,6 @@
 </main>
 <script src="/script.js"></script>
 <script src="/product-view.js"></script>
+<script src="/hamburger.js"></script>
 </body>
 </html>

@@ -8,25 +8,11 @@
 }
 
 .nav {
-
-    &_hamburger {
-        display: none;
-        margin-left: 1.5rem;
-
-        @media (max-width: 900px) {
-            display: block;
-        }
-    }
-
     &_ul {
         list-style: none;
         display: flex;
         gap: 3rem;
         margin-right: auto;
-
-        @media (max-width: 900px) {
-            display: none;
-        }
     }
 
     &_link:link,
@@ -45,6 +31,7 @@
        @media (min-height: 800px) {
         padding-bottom: 2.57rem;
     }
+
     }
 
     &_user {
@@ -64,18 +51,11 @@
     &_shop:hover {
         cursor: pointer;
     }
-
-    &_shop {
-        @media (max-width: 400px) {
-            display: none;
-        }
-    }
 }
-
 
 // OVERLAY's
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -85,27 +65,41 @@
     z-index: 5;
   }
 
-  .overlay-2 {
-    position: absolute;
+  .overlay-2,
+  .overlay-3 {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.755);
+    background-color: rgba(0, 0, 0, 0.855);
     backdrop-filter: blur(3px);
     z-index: 5;
   }
 
+  .overlay-3 {
+      @media (min-width: 900px) {
+          display: none;
+      }
+  }
+  ///////////////////////////////////////////////////////// CHECKOUT
 .checkout {
-
-    position: relative;
-    z-index: 10;
-    top: 175px;
-    right: -215px;
+    position: absolute;
+    z-index: 20;
+    top: 100px;
+    right: 7vw;
     height: 16rem;
     width: 22.5rem;
     background-color: var(--White);
     box-shadow: rgba(149, 157, 165, 0.3) 0px 20px 24px;
+
+    @media (max-width: 420px) {
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -18%);
+        width: 85vw;
+        height: 22rem;
+    }
 
     &_top {
         padding: 1.2rem;
@@ -122,6 +116,10 @@
         align-items: center;
         gap: 1.2rem;
         margin-bottom: 2rem;
+
+        @media (max-width: 420px) {
+            flex-direction: column;
+        }
     }
 
     &_btn {
@@ -149,11 +147,16 @@
 
     &_p {
         margin-bottom: 0.3rem;
+        text-align: center;
     }
 
     &_summary {
         display: flex;
         gap: 0.5rem;
+
+        @media (max-width: 420px) {
+            justify-content: center;
+        }
     }
 
     &_sum {
@@ -200,6 +203,7 @@
    border-radius: 12px;
 }
 
+/////////////////////////////////////////////////////////
 // MAIN 
 .left-side {
     flex: 1;
@@ -223,7 +227,6 @@
 
 
 // LEFT - SIDE
-
 .top {
 
     &_img-box {
@@ -260,7 +263,6 @@
        }
     
     }
-
 
     &_img:hover {
         cursor: pointer;
@@ -426,16 +428,30 @@
         align-items: center;
         padding: 0.8rem;
         font-weight: 700;
+        overflow: hidden;
+
+        @media (max-width: 1070px) {
+            height: 3.3rem;
+        }
     }
 
     &_span-1 {
         font-size: 1.9rem;
         color: var(--Orange);
+        
+        @media (max-width: 1070px) {
+            font-size: 3rem;
+            padding-bottom: 0.4rem;
+        }
     }
 
     &_span-2 {
         font-size: 1.2rem;
         color: var(--Orange);
+
+        @media (max-width: 1070px) {
+            font-size: 1.9rem;
+        }
     }
 
     &_span-1:hover, 
@@ -455,6 +471,11 @@
         font-weight: 700;
         color: var(--White);
         background-color: var(--Orange);
+
+        @media (max-width: 1070px) {
+            width: 17rem;
+            height: 3.3rem;
+        }
     }
 
     &_btn-2:hover{
@@ -468,3 +489,7 @@
     }
 }
 
+.btn-box-p {
+    font-size: 1rem;
+    font-weight: 400;
+}
