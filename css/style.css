@@ -459,10 +459,10 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem; }
-  @media (min-height: 56.25em) {
+  @media (min-height: 900px) {
     .bottom-2 {
       gap: clamp(0.8rem, 4.5vw, 2rem); } }
-  @media (min-height: 43.75em) {
+  @media (min-height: 700px) {
     .bottom-2 {
       gap: clamp(0.8rem, 4.5vw, 2rem); } }
   .bottom-2_box {

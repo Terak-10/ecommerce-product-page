@@ -64,11 +64,11 @@
     justify-content: center;
     gap: 2rem;
      
-    @media (min-height: 56.25em) { // 900px 
+    @media (min-height: 900px) { 
         gap: clamp(0.8rem, 4.5vw, 2rem);
     }
 
-    @media (min-height: 43.75em) { // 700px
+    @media (min-height: 700px) { 
         gap: clamp(0.8rem, 4.5vw, 2rem);
     }
 
