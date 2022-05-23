@@ -288,21 +288,32 @@
 
         @media (max-width: 74.375em) { // 1190px
             width: 6.7vw;
-            height: 100%;
+            height: 5rem;
         }
 
         @media (max-width: 66.875em) { // 1070px
             width: 6rem;
+            height: 6rem;
        }
 
        @media (max-width: 41.875em) { // 670px
             width: clamp(4.3rem, 12vw, 7.8rem);
+            height: 5rem;
        }
 
        @media (max-width: 28.75em) { // 460px
-        width: 16vw;
-       }
+         width: 16vw;
+         height: 4.5rem;
+       } 
 
+       @media (max-width: 25em) { // 40px
+        height: 4rem;
+      } 
+
+      @media (max-width: 21.875em) { // 350px
+        height: 3.6rem;
+      } 
+      
     }
 
     &_img:hover {

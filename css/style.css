@@ -235,16 +235,25 @@ body {
     @media (max-width: 74.375em) {
       .bottom_img {
         width: 6.7vw;
-        height: 100%; } }
+        height: 5rem; } }
     @media (max-width: 66.875em) {
       .bottom_img {
-        width: 6rem; } }
+        width: 6rem;
+        height: 6rem; } }
     @media (max-width: 41.875em) {
       .bottom_img {
-        width: clamp(4.3rem, 12vw, 7.8rem); } }
+        width: clamp(4.3rem, 12vw, 7.8rem);
+        height: 5rem; } }
     @media (max-width: 28.75em) {
       .bottom_img {
-        width: 16vw; } }
+        width: 16vw;
+        height: 4.5rem; } }
+    @media (max-width: 25em) {
+      .bottom_img {
+        height: 4rem; } }
+    @media (max-width: 21.875em) {
+      .bottom_img {
+        height: 3.6rem; } }
   .bottom_img:hover {
     opacity: 0.6;
     cursor: pointer; }
