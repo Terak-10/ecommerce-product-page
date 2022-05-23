@@ -48,11 +48,6 @@
              height: clamp(22rem, 45vw, 42rem);
         }
 
-        @media (max-width: 41.875em) { // 670px
-            width: clamp(25rem, 90vw, 35rem);
-            height: clamp(15rem, 70vw, 35rem);
-       }
-
        @media (max-width: 41.875em) { // 670px
             width: 90vw;
             height: 70vw;

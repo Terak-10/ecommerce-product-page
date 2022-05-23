@@ -7,7 +7,7 @@
     align-items: center;
     border-bottom: 2px solid hsla(218, 14%, 65%, 0.241);
 
-    @media (min-height: 50em) {   // 800px
+    @media (min-height: 800px) { 
         height: 7rem;
         margin: 0 auto 5rem auto;
     }
