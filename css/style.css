@@ -473,7 +473,7 @@ body {
     @media (max-width: 66.875em) {
       .bottom-2_box {
         height: clamp(4.4rem, 8vw, 5.5rem); } }
-    @media (min-height: 56.25em) {
+    @media (min-height: 900px) {
       .bottom-2_box {
         height: clamp(4.4rem, 8vw, 5.5rem); } }
     @media (max-width: 41.875em) {
@@ -488,7 +488,7 @@ body {
     width: 100%;
     height: 5rem;
     border-radius: 12px; }
-    @media (min-height: 56.25em) {
+    @media (min-height: 1070px) {
       .bottom-2_img {
         height: 5.5rem; } }
     @media (max-width: 66.875em) {

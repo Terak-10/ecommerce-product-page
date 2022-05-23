@@ -82,7 +82,7 @@
             height: clamp(4.4rem, 8vw, 5.5rem);
        }
 
-       @media (min-height: 56.25em) { // 900px 
+       @media (min-height: 900px) { 
         height: clamp(4.4rem, 8vw, 5.5rem);
        }
 
@@ -102,7 +102,7 @@
         height: 5rem;
         border-radius: 12px;
 
-        @media (min-height: 56.25em) { // 1070px
+        @media (min-height: 1070px) { 
             height: 5.5rem;
         }
 
