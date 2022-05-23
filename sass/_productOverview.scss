@@ -15,7 +15,7 @@
 
         display: none;
 
-        @media (min-height: 900px) {
+        @media (min-height: 56.25em) { // 900px 
             top: 0;
             left: 525px;
         }
@@ -37,23 +37,23 @@
         height: 29rem;
         border-radius: 25px;
 
-        @media (min-height: 900px) {
+        @media (min-height: 56.25em) { // 900px 
             width: 34rem;
             height: 31rem;
         }
 
 
-        @media (max-width: 1070px) {
+        @media (max-width: 66.875em) { // 1070px 
              width: clamp(25rem, 48vw, 45rem);
              height: clamp(22rem, 45vw, 42rem);
         }
 
-        @media (max-width: 670px) {
+        @media (max-width: 41.875em) { // 670px
             width: clamp(25rem, 90vw, 35rem);
             height: clamp(15rem, 70vw, 35rem);
        }
 
-       @media (max-width: 670px) {
+       @media (max-width: 41.875em) { // 670px
             width: 90vw;
             height: 70vw;
        }
@@ -69,11 +69,11 @@
     justify-content: center;
     gap: 2rem;
      
-    @media (min-height: 900px) {
+    @media (min-height: 56.25em) { // 900px 
         gap: clamp(0.8rem, 4.5vw, 2rem);
     }
 
-    @media (min-height: 700px) {
+    @media (min-height: 43.75em) { // 700px
         gap: clamp(0.8rem, 4.5vw, 2rem);
     }
 
@@ -83,21 +83,21 @@
         border-radius: 12px;
         height: 5rem;
 
-        @media (max-width: 1070px) {
+        @media (max-width: 66.875em) { // 1070px
             height: clamp(4.4rem, 8vw, 5.5rem);
        }
 
-       @media (min-height: 900px) {
+       @media (min-height: 56.25em) { // 900px 
         height: clamp(4.4rem, 8vw, 5.5rem);
        }
 
-        @media (max-width: 670px) {
+        @media (max-width: 41.875em) { // 670px 
             display: flex;
             justify-content: center;
             height: clamp(5rem, 8vw, 5.5rem);
        } 
 
-       @media (max-width: 480px) {
+       @media (max-width: 30em) { // 480px
         height: clamp(3.75rem, 15vw, 5.5rem);
        }
     }
@@ -107,22 +107,22 @@
         height: 5rem;
         border-radius: 12px;
 
-        @media (min-height: 900px) {
+        @media (min-height: 56.25em) { // 1070px
             height: 5.5rem;
         }
 
     
-        @media (max-width: 1070px) {
+        @media (max-width: 66.875em) { // 1070px
             width:  100%;
             height: clamp(4.4rem, 8vw, 5.5rem);
        }
 
-       @media (max-width: 670px) {
+       @media (max-width: 41.875em) { // 670px 
         height: clamp(5rem, 8vw, 5.5rem);
       } 
 
 
-      @media (max-width: 480px) {
+      @media (max-width: 30em) { // 480px
         height: clamp(3.75rem, 15vw, 5.5rem);
        }
     }
